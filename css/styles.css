@@ -7,7 +7,7 @@
   --background-gray: #f5f4fa;
   --footer-color: #2f303a;
   --address-color: rgba(255, 255, 255, 0.6);
-  --outline: 0px solid tomato;
+  --outline: 1px solid tomato;
   --logo-black-color: #000000;
   --hover-hero-btn-color: #188ce8;
   --social-icon-color: #afb1b8;
@@ -609,7 +609,7 @@ footer .logo {
   width: 11px;
   outline: var(--outline);
 }
-
+/**========================================FORM======================================  */
 .call {
   font-weight: 700;
   font-size: 20px;
@@ -618,21 +618,63 @@ footer .logo {
 
   color: var(--title-black-color);
 
-  margin-bottom: 30px;
+  margin-bottom: 12px;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
 }
 
-.label {
+.form-input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  padding-left: 42px;
+}
+
+.form-label {
+  display: block;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
 
   color: var(--text-color);
+  margin-top: 10px;
+  margin-bottom: 4px;
 }
 
-.input-form {
-  display: block;
+.textarea {
+  resize: none;
+
+  width: 448px;
+  height: 120px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.container-input {
+  position: relative;
 }
 
+.container-icon {
+  position: absolute;
+  outline: var(--outline);
+  top: 0;
+
+  width: 42px;
+  height: 40px;
+}
+
+.form-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+}
 /** =====================PORTFOLIO=========PORTFOLIO=========PORTFOLIO=================== */
 /** =======================================BUTTONS======================================= */
 .filter-btn {

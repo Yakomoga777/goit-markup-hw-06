@@ -433,20 +433,48 @@
         <form class="form">
           <p class="call">Залиште свої дані, ми вам передзвонимо</p>
           <div class="form-field" role="group">
-            <label class="lable" for="name">Ім'я <input class="input-form" type="text" /></label>
+            <label class="form-label" for="name">Ім'я</label>
+            <div class="container-input">
+              <input class="form-input" type="text" />
+              <div class="container-icon">
+                <svg class="form-icon" width="12" height="12">
+                  <use href="./images/symbol-defs.svg#icon-user"></use>
+                </svg>
+              </div>
+            </div>
           </div>
           <div class="form-field" role="group">
-            <label class="lable" for="tel"
-              >Телефон
-              <input class="input-form" type="tel" />
-            </label>
+            <label class="form-label" for="name">Телефон</label>
+            <div class="container-input">
+              <input class="form-input" type="tel" />
+              <div class="container-icon">
+                <svg class="form-icon" width="12" height="12">
+                  <use href="./images/symbol-defs.svg#icon-user-phone"></use>
+                </svg>
+              </div>
+            </div>
           </div>
           <div class="form-field" role="group">
-            <label class="lable" for="mail"
-              >Пошта
-              <input class="input-form" type="email" />
-            </label>
+            <label class="form-label" for="name">Пошта</label>
+            <div class="container-input">
+              <input class="form-input" type="email" />
+              <div class="container-icon">
+                <svg class="form-icon" width="12" height="12">
+                  <use href="./images/symbol-defs.svg#icon-user-email"></use>
+                </svg>
+              </div>
+            </div>
           </div>
+          <div class="form-field" role="group">
+            <label class="form-label" for="name">Коментар</label>
+            <textarea class="textarea" name="" id="" cols="30" rows="10"></textarea>
+          </div>
+          <!-- <div class="form-field" role="group">
+            <label class="form-label" for="tel"> <input class="form-input" type="tel" /></label>
+          </div>
+          <div class="form-field" role="group">
+            <label class="form-label" for="mail"> <input class="form-input" type="email" /></label>
+          </div> -->
         </form>
       </div>
     </div>
@@ -454,3 +482,18 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
+
+<!-- <form class="form">
+          <p class="call">Залиште свої дані, ми вам передзвонимо</p>
+          <div class="form-field" role="group">
+            <label class="form-label" for="name"
+              >Ім'я <input class="form-input" type="text" />Ім'я
+            </label>
+          </div>
+          <div class="form-field" role="group">
+            <label class="form-label" for="tel"> <input class="form-input" type="tel" /></label>
+          </div>
+          <div class="form-field" role="group">
+            <label class="form-label" for="mail"> <input class="form-input" type="email" /></label>
+          </div>
+        </form> -->
