@@ -419,6 +419,19 @@
             </li>
           </ul>
         </div>
+
+        <div class="container-footer-form">
+          <p class="footer-form-call">Підпишіться на розсилку</p>
+          <form class="footer-form" action="">
+            <input class="footer-form-input" type="email" placeholder="E-mail" />
+            <button class="footer-form-btn" type="submit">
+              Підписатися
+              <svg class="footer-form-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -433,48 +446,61 @@
         <form class="form">
           <p class="call">Залиште свої дані, ми вам передзвонимо</p>
           <div class="form-field" role="group">
-            <label class="form-label" for="name">Ім'я</label>
+            <label class="form-label" for="user-name">Ім'я</label>
             <div class="container-input">
-              <input class="form-input" type="text" />
-              <div class="container-icon">
-                <svg class="form-icon" width="12" height="12">
-                  <use href="./images/symbol-defs.svg#icon-user"></use>
-                </svg>
-              </div>
+              <input class="form-input" type="text" name="name" id="user-name" autocomplete="on" />
+              <!-- <div class="container-icon"> -->
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-user-name"></use>
+              </svg>
+              <!-- </div> -->
             </div>
           </div>
           <div class="form-field" role="group">
-            <label class="form-label" for="name">Телефон</label>
+            <label class="form-label" for="user-phone">Телефон</label>
             <div class="container-input">
-              <input class="form-input" type="tel" />
+              <input class="form-input" type="tel" name="tel" id="user-phone" autocomplete="on" />
               <div class="container-icon">
-                <svg class="form-icon" width="12" height="12">
+                <svg class="form-icon" width="18" height="18">
                   <use href="./images/symbol-defs.svg#icon-user-phone"></use>
                 </svg>
               </div>
             </div>
           </div>
           <div class="form-field" role="group">
-            <label class="form-label" for="name">Пошта</label>
+            <label class="form-label" for="user-email">Пошта</label>
             <div class="container-input">
-              <input class="form-input" type="email" />
+              <input
+                class="form-input"
+                type="email"
+                name="mail"
+                id="user-email"
+                autocomplete="on"
+              />
               <div class="container-icon">
-                <svg class="form-icon" width="12" height="12">
+                <svg class="form-icon" width="18" height="18">
                   <use href="./images/symbol-defs.svg#icon-user-email"></use>
                 </svg>
               </div>
             </div>
           </div>
           <div class="form-field" role="group">
-            <label class="form-label" for="name">Коментар</label>
-            <textarea class="textarea" name="" id="" cols="30" rows="10"></textarea>
-          </div>
-          <!-- <div class="form-field" role="group">
-            <label class="form-label" for="tel"> <input class="form-input" type="tel" /></label>
+            <label class="form-label" for="user-comment">Коментар</label>
+            <textarea
+              class="textarea"
+              name="comment"
+              id="user-comment"
+              cols="30"
+              rows="10"
+            ></textarea>
           </div>
           <div class="form-field" role="group">
-            <label class="form-label" for="mail"> <input class="form-input" type="email" /></label>
-          </div> -->
+            <label class="form-label" for="checkbox">
+              <input class="form-checkbox" type="checkbox" name="" id="checkbox" /> Погоджуюся з
+              розсилкою та приймаю
+              <a class="contract" href="">Умови договору</a>
+            </label>
+          </div>
         </form>
       </div>
     </div>
