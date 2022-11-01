@@ -813,6 +813,7 @@ footer .logo {
 }
 .contract {
   color: var(--blue-color);
+  text-decoration: underline;
 }
 
 .btn-senden {
