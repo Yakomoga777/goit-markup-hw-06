@@ -576,7 +576,7 @@ footer .logo {
   background: var(--footer-color);
   color: var(--white-color);
 }
-::placeholder {
+.textarea::placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
