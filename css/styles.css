@@ -7,7 +7,7 @@
   --background-gray: #f5f4fa;
   --footer-color: #2f303a;
   --address-color: rgba(255, 255, 255, 0.6);
-  --outline: 0px solid tomato;
+  --outline: 1px solid tomato;
   --logo-black-color: #000000;
   --hover-hero-btn-color: #188ce8;
   --social-icon-color: #afb1b8;
@@ -714,7 +714,7 @@ footer .logo {
 }
 .form-input:focus,
 .textarea:focus {
-  outline: none;
+  outline: transparent;
   border: 1px solid var(--blue-color);
 }
 
@@ -743,28 +743,19 @@ footer .logo {
   position: relative;
 }
 
-.container-icon {
-  position: absolute;
-  outline: var(--outline);
-  top: 0;
-
-  width: 42px;
-  height: 40px;
-}
-
 .form-icon {
   position: absolute;
-  left: 50%;
+  left: 12px;
   top: 50%;
 
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
 
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: var(--cubic);
 }
 
-.form-input:focus-within + .container-icon svg {
+.form-input:focus-within + .form-icon {
   fill: var(--blue-color);
 }
 .form-field-checkbox {
